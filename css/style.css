@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(135, 211, 255);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.box {
+    aspect-ratio: 1;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    padding: 20px 0;
+    color: white;
+}
