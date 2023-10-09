@@ -8,30 +8,40 @@ console.log(gridDOMElement);
 
 for (let i = 1; i <= 100; i++) {
 
+    console.log(i);
+
+    const fizz = 'fizz';
+    const buzz = 'buzz';
+
+    let boxElement = document.createElement('div');
+    boxElement.classList.add('box');
+
     //  - e per i multipli di 3 e 5 creare una regola
-    let fizzbuzz 
-
-    if (i % 15 === 0) {
+    if (i % 3 === 0 && i % 5 ===0) {
         console.log('fizzbuzz');
-
+        boxElement.append(fizz + buzz);
+        boxElement.classList.add('fizzbuzz');
     //  - creare multipli di 5
 
     } else if (i % 5 === 0) {
         console.log('buzz');
+        boxElement.append(buzz);
+        boxElement.classList.add('buzz');
+
 
     //  - creare multipli di 3     
     
     } else if (i % 3 === 0) {
         console.log('fizz');
+        boxElement.append(fizz);
+        boxElement.classList.add('fizz');
         
     } else {
-        console.log(i)
+        boxElement.append(i);
     }
 
-    const boxDOMElement = document.createElement('div');
-    boxDOMElement.classList.add('box');
-    boxDOMElement.innerHTML = i;
-    gridDOMElement.append(boxDOMElement);
+    gridDOMElement.append(boxElement);
+
 }
 
 
