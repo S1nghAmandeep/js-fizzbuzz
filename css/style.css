@@ -22,9 +22,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 29px;
     color: white;
     border-radius: 10px;
+}
+
+.fizz {
+    background-color: aquamarine;
+}
+
+.buzz {
+    background-color: rgb(163, 127, 255);
+}
+
+.fizzbuzz {
+    background-color: rgb(140, 255, 127);
 }
 
 h1 {
